@@ -1,0 +1,170 @@
+.header {
+    width: 100%;
+
+    &__main {
+        background: url(../images/header.jpg) no-repeat;
+        background-size: cover;
+        height: 740px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__title {
+        color: white;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 4.8px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    &__moto {
+        color: white;
+        font-size: 22px;
+        letter-spacing: 6.82px;
+        margin-bottom: 50px;
+    }
+}
+
+.search {
+    width: 750px;
+    position: relative;
+    margin-bottom: 160px;
+
+    
+    &__input {
+        @include size(100%, 60px);
+        padding-left: 125px;
+
+        &::placeholder {
+            font-size: 14px;
+            letter-spacing: 2.8px;
+            color: #999999;
+        }
+
+        &:focus {
+            border: 1px solid rgb(238, 109, 109);
+        }
+    }
+}
+
+.search-button {
+    @include size(150px, 54px);
+    @include pos($r: 3px, $t:3px);
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 17px;
+    justify-content: space-around;
+    background-color: #5474fd;   
+    transition: .3s;
+    font-family: 'Aleo', serif;
+
+    &__text {
+        font-size: 11px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        @include size(20px);
+        fill: white;
+    }
+
+    &:hover {
+        filter: brightness(1.2);
+        transform: scale(1.02);
+    }
+}
+
+.scroll {
+    width: 200px;
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        animation: scroll 2s ease-in-out infinite;
+    }
+
+    &__text {
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: #ffffff;
+    }
+
+    &__icon {
+        @include size(32px);
+        fill: white;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        bottom: 6%;
+    }
+
+    50% {
+        bottom: 8%;
+    }
+
+    100% {
+        bottom: 6%;
+    }
+}
+
+
+.header__line {
+    height: 80px;
+    background-color: #5474fd;
+    display: flex;
+    justify-content: space-around;
+}
+
+.line__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navigation {
+    width: 630px;
+    font-family: 'Aleo', serif;
+}
+
+.menu {
+    display: flex;
+
+    &__item {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 42px;
+        transition: .3s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}

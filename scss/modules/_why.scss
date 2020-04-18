@@ -1,0 +1,92 @@
+.why {
+    &__main {
+        background: url(../images/choose.jpg) no-repeat;
+        background-size: cover;
+        height: 685px;
+        padding-top: 120px;
+    }
+
+    &__title {
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+        color: white;
+        margin-top: 85px;
+        margin-bottom: 60px;
+    }
+
+    &__info {
+        color: white;
+        font-size: 16px;
+        letter-spacing: 1.6;
+        line-height: 1.63;
+        margin-bottom: 45px;
+    }
+
+    &__button {
+        @include size(225px, 50px);
+        background-color: #5474fd;
+        text-align: center;
+        padding-top: 16px;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+        font-family: 'Aleo', serif;
+
+        &:hover {
+            filter: brightness(1.1);
+            transform: scale(1.08);;
+        }
+    }
+
+    &__img {
+        @include size(350px, 220px);
+
+        &--right {
+            margin-top: 5px;
+            margin-left: 125px;
+        }
+    }
+}
+
+.tools {
+    background-color: #333333;
+    height: 330px;
+    font-family: 'Aleo', serif;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+
+    &__icon {
+        @include size(60px);
+        margin-bottom: 30px;
+        transition: .3s;
+
+        &:hover{
+            fill: rgb(4, 194, 4); 
+        }
+
+        &--search {
+            fill: #5474fd;
+        }
+
+        &--check {
+            fill: #ff6363;
+        }
+
+        &--like {
+            fill: #00a2ff;
+        }
+    }
+
+    &__text {
+        font-size: 36px;
+        color: white;
+    }
+}   

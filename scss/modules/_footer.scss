@@ -1,0 +1,38 @@
+.footer {
+    background-color: #232323;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__moto {
+        font-size: 16px;
+        color: white;
+        margin: 15px 0 30px;
+        text-align: center;
+    }
+
+    &--logo {
+        margin-top: 120px;
+        text-align: center;
+    }
+}
+
+.social {
+    display: flex;
+    
+    &__item {
+        margin-left: 15px;
+    }
+
+    &__icon {
+        @include size(18px, 13px);
+        fill: white;
+        transition: .3s;
+
+        &:hover {
+            fill: #5474fd;
+            transform: scale(1.2);;
+        }
+    }
+}

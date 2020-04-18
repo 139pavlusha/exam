@@ -1,0 +1,54 @@
+.spain {
+    background: url(../images/spain-1.jpg) no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding-top: 230px;
+}
+
+.op-block {
+    padding: 50px 30px;
+    background-color: #232323;
+    opacity: .9;
+    @include size(540px, 371px);
+
+    &__small-title {
+        color: #e8e8e8;
+        font-size: 18px;
+    }
+
+    &__title {
+        color: white;
+        font-size: 20px;
+        margin-top: 28px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: #e8e8e8;
+        line-height: 1.63;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        @include size(225px, 50px);
+        background-color: #5474fd;
+        text-align: center;
+        padding-top: 16px;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+        font-family: 'Aleo', serif;
+
+        &:hover {
+            filter: brightness(1.1);
+            transform: scale(1.08);;
+        }
+    }
+}
+
+.spain--mount {
+    background: url(../images/spain-2.jpg) no-repeat;
+}
